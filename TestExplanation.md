@@ -11,7 +11,7 @@
 
 - `test_data` - hold JavaScript objects containing data used in writing tests
 
-### Test explantion
+### Test explanation
 - `login` - test login functionality on the QA Sandbox with different  scenarios
 
 - `createUpdateDeleteUseCases` - automate manually written use cases. This test follows the requirements under Test 1(1.1,1.2,1.3,1.4,1.5) delete, create, update, review and delete once again created test cases

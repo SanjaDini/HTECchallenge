@@ -190,19 +190,19 @@ describe('Create use case to delete all use cases', () => {
     useCasesActions.toggleOnAutomationButtonAndClickOnSubmitButton(deleteAllUseCases.values[0])
   );
 });
-// describe('Open each test case and update all fields', () => {
-//   it('Given I can open each field and update it', () =>
-//     useCasesActions.updateAllFields(editFields.editValue)
-//   );
-//   it('Then list with updated items is displaying', () =>
-//     useCasesActions.expectElementTextContaining('allUseCases', editFields.editValue)
-//   );
-// });
-// describe('Remove all created Test Cases', () => {
-//   it('Given I can click each created Test Cases and delete it', () =>
-//     useCasesActions.deleteAllUseCases()
-//   );
-//   it('Then I can see empty Use Case page', () =>
-//     useCasesActions.expectElementTextContaining('emptyUseCaseList', emptyListUseCases.text)
-//   );
-// });
+describe('Open each test case and update all fields', () => {
+  it('Given I can open each field and update it', () =>
+    useCasesActions.updateAllFields(editFields.editValue)
+  );
+  it('Then list with updated items is displaying', () =>
+    useCasesActions.expectElementTextContaining('allUseCases', editFields.editValue)
+  );
+});
+describe('Remove all created Test Cases', () => {
+  it('Given I can click each created Test Cases and delete it', () =>
+    useCasesActions.deleteAllUseCases()
+  );
+  it('Then I can see empty Use Case page', () =>
+    useCasesActions.expectElementTextContaining('emptyUseCaseList', emptyListUseCases.text)
+  );
+});

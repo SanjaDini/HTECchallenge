@@ -5,7 +5,7 @@
 
 - `actions` - holds the test methods
 
-- `pageobjects` - holds files that contain methods for interacting with page
+- `pageobjects` - holds pageobjects
 
 - `specs` - holds test specification written in mocha
 

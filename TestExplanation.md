@@ -18,5 +18,5 @@
 
 - `useCases` - test all previously written scenarios(use case functionalites)
 
-### Use Cases page submited exam
+### Use Cases page submitted exam
 - The exam is submitted  with written test cases(which are automated under `createUpdateDeleteUseCases`). When you run `createUpdateDeleteUseCases`, automated test will delete all use cases, create it once again, read, update and then delete

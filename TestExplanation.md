@@ -14,7 +14,7 @@
 ### Test explantion
 - `login` - test login functionality on the QA Sandbox with different  scenarios
 
-- `createUpdateDeleteUseCases` - automate manually written use cases. This test follows the requirements under Test 1(1.1,1.2,1.3,1.4,1.5) delete, create, update, review and delete once again initialy manually created test cases
+- `createUpdateDeleteUseCases` - automate manually written use cases. This test follows the requirements under Test 1(1.1,1.2,1.3,1.4,1.5) delete, create, update, review and delete once again created test cases
 
 - `useCases` - test all previously written scenarios(use case functionalites)
 

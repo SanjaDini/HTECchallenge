@@ -4,7 +4,8 @@ const {
   login, openUseCase, allBlankFields, emptyTitle,
   emptyExpectedResultField, emptyUseCaseSteps, readWrittenUseCases,
   updateAllUseCases, deleteAllUseCases, editFields, emptyListUseCases,
-  shortTitle, shortExpectedResult,
+  shortTitle, shortExpectedResult, emptyFields, emptyEmailFields, emptyPasswordFields,
+  shortPasswordData,
 } = require('../test_data/test_values/textValues');
 const { data } = require('../test_data/data/data');
 
@@ -24,7 +25,51 @@ describe('Remove all created Test Cases', () => {
     useCasesActions.expectElementTextContaining('emptyUseCaseList', emptyListUseCases.text)
   );
 });
-describe('Create use case for login', () => {
+describe('Create use case for login with all empty fields', () => {
+  it('Given I can click on Create Use Case button', () =>
+    useCasesActions.openCreateUseCase()
+  );
+  it('When I can insert value in all fields', () =>
+    useCasesActions.fillAllFieldsWithData(emptyFields.values)
+  );
+  it('Then I can click on Submit button and toggle on "Automated?" to Yes', () =>
+    useCasesActions.toggleOnAutomationButtonAndClickOnSubmitButton(emptyFields.values[0])
+  );
+});
+describe('Create use case for login with empty Email Address field', () => {
+  it('Given I can click on Create Use Case button', () =>
+    useCasesActions.openCreateUseCase()
+  );
+  it('When I can insert value in all fields', () =>
+    useCasesActions.fillAllFieldsWithData(emptyEmailFields.values)
+  );
+  it('Then I can click on Submit button and toggle on "Automated?" to Yes', () =>
+    useCasesActions.toggleOnAutomationButtonAndClickOnSubmitButton(emptyEmailFields.values[0])
+  );
+});
+describe('Create use case for login with empty Password field', () => {
+  it('Given I can click on Create Use Case button', () =>
+    useCasesActions.openCreateUseCase()
+  );
+  it('When I can insert value in all fields', () =>
+    useCasesActions.fillAllFieldsWithData(emptyPasswordFields.values)
+  );
+  it('Then I can click on Submit button and toggle on "Automated?" to Yes', () =>
+    useCasesActions.toggleOnAutomationButtonAndClickOnSubmitButton(emptyPasswordFields.values[0])
+  );
+});
+describe('Create use case for login with short password', () => {
+  it('Given I can click on Create Use Case button', () =>
+    useCasesActions.openCreateUseCase()
+  );
+  it('When I can insert value in all fields', () =>
+    useCasesActions.fillAllFieldsWithData(shortPasswordData.values)
+  );
+  it('Then I can click on Submit button and toggle on "Automated?" to Yes', () =>
+    useCasesActions.toggleOnAutomationButtonAndClickOnSubmitButton(shortPasswordData.values[0])
+  );
+});
+describe('Create use case for login with correct credentials', () => {
   it('Given I can click on Create Use Case button', () =>
     useCasesActions.openCreateUseCase()
   );
@@ -145,19 +190,19 @@ describe('Create use case to delete all use cases', () => {
     useCasesActions.toggleOnAutomationButtonAndClickOnSubmitButton(deleteAllUseCases.values[0])
   );
 });
-describe('Open each test case and update all fields', () => {
-  it('Given I can open each field and update it', () =>
-    useCasesActions.updateAllFields(editFields.editValue)
-  );
-  it('Then list with updated items is displaying', () =>
-    useCasesActions.expectElementTextContaining('allUseCases', editFields.editValue)
-  );
-});
-describe('Remove all created Test Cases', () => {
-  it('Given I can click each created Test Cases and delete it', () =>
-    useCasesActions.deleteAllUseCases()
-  );
-  it('Then I can see empty Use Case page', () =>
-    useCasesActions.expectElementTextContaining('emptyUseCaseList', emptyListUseCases.text)
-  );
-});
+// describe('Open each test case and update all fields', () => {
+//   it('Given I can open each field and update it', () =>
+//     useCasesActions.updateAllFields(editFields.editValue)
+//   );
+//   it('Then list with updated items is displaying', () =>
+//     useCasesActions.expectElementTextContaining('allUseCases', editFields.editValue)
+//   );
+// });
+// describe('Remove all created Test Cases', () => {
+//   it('Given I can click each created Test Cases and delete it', () =>
+//     useCasesActions.deleteAllUseCases()
+//   );
+//   it('Then I can see empty Use Case page', () =>
+//     useCasesActions.expectElementTextContaining('emptyUseCaseList', emptyListUseCases.text)
+//   );
+// });

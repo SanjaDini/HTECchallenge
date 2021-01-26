@@ -12,7 +12,7 @@ describe('Login into QA Sandbox with all empty fields', () => {
   );
 });
 describe('Login into QA Sandbox with empty Email Address field', () => {
-  it('Given I can insert Password field', () =>
+  it('Given I can insert Password', () =>
     LoginAction.setFieldValue('password', 'password')
   );
   it('When I click on Submit button', () =>
@@ -26,7 +26,7 @@ describe('Login into QA Sandbox with empty Password field', () => {
   it('Given I can refresh the page in order to clear inserted values', () =>
     browser.refresh()
   );
-  it('And I can insert Email field', () =>
+  it('And I can insert Email', () =>
     LoginAction.setFieldValue('email', 'username')
   );
   it('When I click on Submit button', () =>
@@ -37,10 +37,10 @@ describe('Login into QA Sandbox with empty Password field', () => {
   );
 });
 describe('Login with non existing user', () => {
-  it('Given I can insert Email field', () =>
+  it('Given I can insert Email', () =>
     LoginAction.setFieldValue('email', 'dummyEmail')
   );
-  it('And I can insert Password field', () =>
+  it('And I can insert Password', () =>
     LoginAction.setFieldValue('password', 'dummyPassword')
   );
   it('When I click on Submit button', () =>
@@ -54,10 +54,10 @@ describe('Login with short password', () => {
   it('Given I can refresh the page in order to clear inserted values', () =>
     browser.refresh()
   );
-  it('Given I can insert Email field', () =>
+  it('Given I can insert Email', () =>
     LoginAction.setFieldValue('email', 'username')
   );
-  it('And I can insert Password field', () =>
+  it('And I can insert Password', () =>
     LoginAction.setFieldValue('password', 'shortPassword')
   );
   it('When I click on Submit button', () =>
@@ -68,10 +68,10 @@ describe('Login with short password', () => {
   );
 });
 describe('Login with correct username and password', () => {
-  it('Given I can insert Email field', () =>
+  it('Given I can insert Email', () =>
     LoginAction.setFieldValue('email', 'username')
   );
-  it('And I can insert Password field', () =>
+  it('And I can insert Password', () =>
     LoginAction.setFieldValue('password', 'password')
   );
   it('When I click on Submit button', () =>

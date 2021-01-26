@@ -10,7 +10,7 @@ const { data } = require('../test_data/data/data');
 
 describe('Login into QA Sandbox', () => {
   it('Given I can successful login and open use case page', () => {
-    browser.url('/login');
+    browser.url('login');
     baseActions.login(data.username, data.password);
     baseActions.clickOnUseCases();
     baseActions.verifyOpenedPage();

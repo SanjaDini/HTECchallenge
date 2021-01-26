@@ -1,7 +1,7 @@
 # HTECchallenge
 
 ### Project structure
-- `wdio.conf.android`, `wdio.conf.chrome` and `wdio.conf.firefox` holds base configuration. Here is provided basic configuration. The structure of `confing` file can be changed as per per requirments.
+- `wdio.conf.android`, `wdio.conf.chrome` and `wdio.conf.firefox` holds base configuration. Here is provided basic configuration. The structure of `confing` file can be changed as per requirments.
 
 - `actions` - holds the test methods
 

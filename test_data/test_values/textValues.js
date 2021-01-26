@@ -38,6 +38,42 @@ module.exports.login = {
   ],
 };
 
+module.exports.emptyFields = {
+  values: [
+    'Login into QA Sandbox with all empty fields',
+    'Test login functionality with all empty fields.',
+    'Login failed',
+    'Click on Login button',
+  ],
+};
+
+module.exports.emptyEmailFields = {
+  values: [
+    'Login into QA Sandbox with empty Email Address field',
+    'Test login functionality with empty Email Address field.',
+    'Login failed',
+    'Insert Password, Click on Login button',
+  ],
+};
+
+module.exports.emptyPasswordFields = {
+  values: [
+    'Login into QA Sandbox with empty Password field',
+    'Test login functionality with empty Password field.',
+    'Login failed',
+    'Insert Email, Click on Login button',
+  ],
+};
+
+module.exports.shortPasswordData = {
+  values: [
+    'Login into QA Sandbox with short password',
+    'Test login functionality with short password.',
+    'Login failed',
+    'Insert short password, Click on Login button',
+  ],
+};
+
 module.exports.openUseCase = {
   values: [
     'Open Use Cases page',

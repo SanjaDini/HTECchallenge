@@ -1,6 +1,6 @@
 # HTECchallenge
 
-## Requirments
+## Requirements
 
 ```shell script
 node.js

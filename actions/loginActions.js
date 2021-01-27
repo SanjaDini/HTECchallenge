@@ -24,7 +24,7 @@ class loginActions {
   }
 
   expectExistElementAndUrl() {
-    expect(browser).toHaveTextContaining('dashboard');
+    expect(browser).toHaveTextContaining('/dashboard');
     expect($(login.dashboard)).toBeExisting();
   }
 }
